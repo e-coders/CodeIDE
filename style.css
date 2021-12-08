@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;}
+
+body {
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.tab,.tablinks,.tabcontent{
+    font-family: 'Roboto', sans-serif;
+}
+
+.msg{
+    font-family: 'Roboto', sans-serif;
+}
+
+.code-area {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    border: none;    
+}
+
+.code-area textarea {
+    resize: all;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    padding: 10px;
+}
+.preview-area {
+    width: 100%;
+    border: none;    
+}
+
+.preview-area iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#clear,
+#load{
+    width: 35%;
+    font-size: 25px;
+    font-weight: bold;
+    border-style: dotted;
+    background-color: #49ad37;
+    color: #ffffff;
+    opacity: 70%;
+    transition: 0.9s;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-radius:25px;
+}
+
+#load {
+    margin-left: 64px;
+    width: 35%;
+    background-color: #49ad37;
+    border: 1px solid transparent;
+    border-radius:25px;
+}
+
+
+
+#clear:hover {
+    opacity: 100%;
+}
+textarea{
+  font-family: 'Roboto', sans-serif;
+  border: none;    
+}
+#load:hover {
+    opacity: 100%;
+}
+
+.txt {
+    margin: 2px;
+}
+
+#outer {
+    width: 100%;
+    text-align: center;
+}
+
+.inner {
+    display: inline-block;
+}
+
+#run:hover {
+    opacity: 100%;
+}
+#console{    
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width:10%;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.5s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  padding: 6px 12px;
+  border: none;    
+  display: none;
+}
+.active-tab{
+ display: block;
+}
+#OUTPUT{
+  transform: translateX(10%);
+  width:100%;
+  height:100%;
+  margin: none;
+  position: fixed;
+  padding: none;
+}
+.consolet{
+  transform: translateY(250%);
+  margin: 0;
+  padding: 0;
+}
